@@ -6,9 +6,16 @@
 /*   By: aumartin <aumartin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/31 14:40:39 by aumartin          #+#    #+#             */
-/*   Updated: 2024/05/31 14:41:53 by aumartin         ###   ########.fr       */
+/*   Updated: 2024/05/31 14:56:25 by aumartin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
+void	ft_ptr_to_hex(va_list argp, int *count)
+{
+	char			*hex;
+	unsigned long	n;
+
+	hex = "0123456789abcdef";
+}

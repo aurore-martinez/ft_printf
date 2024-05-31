@@ -6,16 +6,12 @@
 /*   By: aumartin <aumartin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 11:53:23 by aumartin          #+#    #+#             */
-/*   Updated: 2024/05/31 14:03:42 by aumartin         ###   ########.fr       */
+/*   Updated: 2024/05/31 14:59:02 by aumartin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
-void	ft_putchar_txt(char c)
-{
-	write(1, &c, sizeof(char));
-}
+#include "libft.h"
 
 void	ft_putnbr(long nb, int *count)
 {
@@ -23,7 +19,7 @@ void	ft_putnbr(long nb, int *count)
 	{
 		ft_putnbr(nb / 10, count);
 	}
-	ft_putchar_txt(nb % 10 + '0');
+	ft_putchar_fd(nb % 10 + '0', 1);
 	*count += 1;
 }
 
