@@ -6,7 +6,7 @@
 /*   By: aumartin <aumartin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 11:04:11 by aumartin          #+#    #+#             */
-/*   Updated: 2024/05/30 12:32:46 by aumartin         ###   ########.fr       */
+/*   Updated: 2024/05/31 15:44:49 by aumartin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,7 @@ void	ft_putchar(va_list argp, int *count)
 	int	c;
 
 	c = va_arg(argp, int);
-	write(1, &c, sizeof(char));
-	*count += 1;
+	*count += write(1, &c, sizeof(char));
 }
 
 void	ft_putstr(va_list argp, int *count)

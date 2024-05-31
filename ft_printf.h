@@ -6,7 +6,7 @@
 /*   By: aumartin <aumartin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 11:13:06 by aumartin          #+#    #+#             */
-/*   Updated: 2024/05/31 14:04:23 by aumartin         ###   ########.fr       */
+/*   Updated: 2024/05/31 16:00:13 by aumartin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,9 @@ void	ft_putnbr(long nb, int *count);
 void	ft_int_to_nbr(va_list argp, int *count);
 void	ft_uint_to_nbr(va_list argp, int *count);
 
+/* Functions puthex */
+/* void	ft_ptr_to_hex(va_list argp, int *count);
+void	ft_long_to_hex(va_list argp, int *count, char conv);
+void	ft_puthex(unsigned long n, char *base, int *count);
+ */
 #endif
