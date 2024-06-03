@@ -6,7 +6,7 @@
 /*   By: aumartin <aumartin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/31 14:40:39 by aumartin          #+#    #+#             */
-/*   Updated: 2024/05/31 15:20:13 by aumartin         ###   ########.fr       */
+/*   Updated: 2024/06/03 10:55:42 by aumartin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ void	ft_ptr_to_hex(va_list argp, int *count)
 		ft_puthex(n, hex, count);
 	}
 }
-
 
 void	ft_long_to_hex(va_list argp, int *count, char conv)
 {

@@ -6,7 +6,7 @@
 /*   By: aumartin <aumartin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/29 16:23:45 by aumartin          #+#    #+#             */
-/*   Updated: 2024/05/31 16:03:06 by aumartin         ###   ########.fr       */
+/*   Updated: 2024/06/03 10:45:35 by aumartin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,10 +52,10 @@ int	print_select(const char *s, va_list argp, int *count)
 		ft_int_to_nbr(argp, count);
 	else if (*s == '%' && *(s + 1) == 'u')
 		ft_uint_to_nbr(argp, count);
-/* 	else if (*s == '%' && *(s + 1) == 'p')
+	else if (*s == '%' && *(s + 1) == 'p')
 		ft_ptr_to_hex(argp, count);
 	else if (*s == '%' && (*(s + 1) == 'x' || *(s + 1) == 'X'))
-		ft_long_to_hex(argp, count, *(s + 1)); */
+		ft_long_to_hex(argp, count, *(s + 1));
 	else
 		return (-1);
 	return (0);
