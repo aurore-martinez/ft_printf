@@ -6,7 +6,7 @@
 /*   By: aumartin <aumartin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/29 16:23:45 by aumartin          #+#    #+#             */
-/*   Updated: 2024/06/03 10:45:35 by aumartin         ###   ########.fr       */
+/*   Updated: 2024/06/21 17:56:24 by aumartin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_printf(const char *s, ...)
 
 	va_start(argp, s);
 	count = 0;
-	while (*s)
+	while (s && *s)
 	{
 		if (*s != '%')
 		{

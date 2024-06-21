@@ -6,7 +6,7 @@
 /*   By: aumartin <aumartin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/31 13:41:58 by aumartin          #+#    #+#             */
-/*   Updated: 2024/06/04 15:11:58 by aumartin         ###   ########.fr       */
+/*   Updated: 2024/06/21 17:57:55 by aumartin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -173,6 +173,8 @@ int	main()
 	ft = ft_printf("%d, %d, %c et un truc\n", -1, 9, 49);
 	real = printf("%d, %d, %c et un truc\n", -1, 9, 49);
 	printf("len_ft_printf = %d et len_printf = %d\n\n", ft, real);
+
+	ft_printf(0);
 
 	return (0);
 }
